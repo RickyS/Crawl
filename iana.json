@@ -1,0 +1,14 @@
+{"Tests":
+  [
+    {
+    "Testname":           "IANA",
+    "Maxurls":              9600,
+    "MaxGoRoutines":           10,
+    "Gomaxprocs":              2,
+    "ExpectFail":          false,
+    "Urls":         [ "http://www.iana.org/"
+                    ]
+    }
+
+  ]
+}
