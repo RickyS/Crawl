@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"testnameDisplay	 ν"
+			],
+			[
 				"S",
 				"StatusCode	int ν"
 			],
@@ -36,26 +40,10 @@
 	"buffers":
 	[
 		{
-			"file": "samedomain.go",
-			"settings":
-			{
-				"buffer_size": 784,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "ricky.json",
 			"settings":
 			{
 				"buffer_size": 334,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "loadtestfile.go",
-			"settings":
-			{
-				"buffer_size": 1304,
 				"line_ending": "Unix"
 			}
 		},
@@ -92,18 +80,18 @@
 			}
 		},
 		{
-			"file": "crawler.go",
+			"file": "alias.bash",
 			"settings":
 			{
-				"buffer_size": 6021,
+				"buffer_size": 936,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "alias.bash",
+			"file": "crawl.go",
 			"settings":
 			{
-				"buffer_size": 969,
+				"buffer_size": 5332,
 				"line_ending": "Unix"
 			}
 		}
@@ -114,6 +102,26 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"gosublime",
+				"GoSublime: Browse Declarations"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ssbash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"snip ty fu",
+				"Snippet: Type Function"
+			],
+			[
+				"snipp",
+				"Snippet: Type"
+			],
 			[
 				"GoSublime: ",
 				"GoSublime: Usage & Tips"
@@ -131,7 +139,10 @@
 	},
 	"console":
 	{
-		"height": 181.0
+		"height": 181.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -144,20 +155,41 @@
 	},
 	"file_history":
 	[
+		"/home/ricky/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/ricky/.config/sublime-text-2/Packages/AdvancedNewFile/README.md",
+		"/home/ricky/.config/sublime-text-2/Packages/Color Scheme - User/BlackboardRicky.tmTheme",
+		"/home/ricky/ToDo.txt",
+		"/home/ricky/Documents/Todo.txt",
+		"/home/ricky/bin/terminator.sh",
+		"/home/ricky/.bash_aliases",
+		"/home/ricky/.zshrc",
+		"/home/ricky/.go_profile",
+		"/home/ricky/.config/sublime-text-2/Backup/20130710123050/PlainTasks/TODO.todo",
+		"/home/ricky/.config/sublime-text-2/Packages/PlainTasks/PlainTasks (Linux).sublime-settings",
+		"/home/ricky/.config/sublime-text-2/Packages/User/PlainTasks.sublime-settings",
+		"/home/ricky/todo.txt",
+		"/home/ricky/.config/sublime-text-2/Packages/AdvancedNewFile/Default (Linux).sublime-keymap",
+		"/home/ricky/Projects/Go/own/src/crawl/garbagio/trash/nonsense/wasteful/zaza.go",
+		"/home/ricky/Projects/Go/own/src/crawl/garbage.txt",
+		"/home/ricky/defaults.list",
+		"/home/ricky/Projects/Go/own/src/creep/whatever.txt",
+		"/home/ricky/Projects/Go/own/src/crawl/crawl.sublime-project",
+		"/home/ricky/Projects/Go/own/src/crawl/crawl.go",
+		"/home/ricky/Projects/Go/own/src/creep/creep.go",
+		"/home/ricky/Projects/Go/own/src/crawl/loadtestfile.go",
+		"/home/ricky/Projects/Go/own/src/crawl/samedomain.go",
+		"/home/ricky/Projects/Go/own/src/crawl/crawler.go",
 		"/home/ricky/Projects/Go/own/src/creep/alias.bash",
 		"/home/ricky/Projects/Go/own/src/crawler/crawler.go",
 		"/home/ricky/.config/sublime-text-2/Packages/User/GoSublime.sublime-settings",
 		"/home/ricky/.config/sublime-text-2/Packages/GoSublime/GoSublime.sublime-settings",
 		"/home/ricky/Projects/Go/own/src/creep/testiana.json",
-		"/home/ricky/Projects/Go/own/src/creep/creep.go",
 		"/home/ricky/.config/sublime-text-2/Packages/GoSublime/USAGE.md",
 		"/home/ricky/Projects/Go/own/src/creep/loadtestfile.go",
 		"/home/ricky/Projects/Go/own/src/creep/samedomain.go",
 		"/home/ricky/Projects/Go/own/src/creep/testricky.json",
 		"/home/ricky/Projects/Go/own/src/creep/testgolangbigsmall.json",
-		"/home/ricky/.config/sublime-text-2/Packages/Color Scheme - User/BlackboardRicky.tmTheme",
 		"/home/ricky/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/home/ricky/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/usr/local/go/src/pkg/net/http/transfer.go",
 		"/home/ricky/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/ricky/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
@@ -170,7 +202,6 @@
 		"/home/ricky/.config/sublime-text-2/Packages/GoSublime/creep.sublime-project",
 		"/home/ricky/.config/sublime-text-2/Packages/Ruby/Ruby.sublime-build",
 		"/home/ricky/Projects/Ruby/Noodle1/tax.rb",
-		"/home/ricky/.bash_aliases",
 		"/usr/bin/sublime-text-2",
 		"/usr/bin/sublime-text",
 		"/home/ricky/.config/sublime-text-2/Packages/Ruby/Default.sublime-keymap",
@@ -180,10 +211,8 @@
 		"/home/ricky/.config/sublime-text-2/Packages/User/JSON.sublime-settings",
 		"/opt/Sublime Text 2/Pristine Packages/Ruby.sublime-package",
 		"/home/ricky/subl.desktop",
-		"/home/ricky/defaults.list",
 		"/usr/share/applications/subl.desktop",
 		"/home/ricky/Projects/Ruby/Noodle1/Noodle1.sublime-project",
-		"/home/ricky/ToDo.txt",
 		"/home/ricky/.bashrc",
 		"/home/ricky/.bash_profile",
 		"/home/ricky/Sublime/Bash.sublime-project",
@@ -219,6 +248,18 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"creep.jobData",
+			"JobDescription",
+			"testname",
+			"JobDescription",
+			"Job",
+			"subl",
+			"text",
+			":\n",
+			"boolTF",
+			"EachUt",
+			"eachUt",
+			"doTest",
 			"log.",
 			"t.Log",
 			"t.Logf",
@@ -263,6 +304,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"jobData",
+			"creep.JobDescription",
+			"EachGroup",
+			"eachGroup",
+			"doJob",
 			"fmt.",
 			"fmt.Println",
 			"fmt.Printf",
@@ -279,45 +325,19 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
-		"wrap": false
+		"whole_word": false,
+		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "samedomain.go",
-					"settings":
-					{
-						"buffer_size": 784,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "ricky.json",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 334,
@@ -344,35 +364,9 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "loadtestfile.go",
-					"settings":
-					{
-						"buffer_size": 1304,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "iana.json",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 271,
@@ -399,8 +393,9 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "golangbig.json",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 305,
@@ -427,8 +422,9 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "golang.json",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 296,
@@ -455,8 +451,9 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "dummy.json",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 349,
@@ -483,11 +480,41 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "crawler.go",
+					"buffer": 5,
+					"file": "alias.bash",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6021,
+						"buffer_size": 936,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								448,
+								448
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "crawl.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5332,
 						"regions":
 						{
 						},
@@ -508,45 +535,17 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "alias.bash",
-					"settings":
-					{
-						"buffer_size": 969,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"layout":
 	{
@@ -571,6 +570,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.9o:///home/ricky/Projects/Go/own/src/crawl":
+	{
+		"height": 130.0
+	},
 	"output.9o:///home/ricky/Projects/Go/own/src/creep":
 	{
 		"height": 120.0
@@ -583,6 +586,7 @@
 	{
 		"height": 30.0
 	},
+	"project": "crawl.sublime-project",
 	"replace":
 	{
 		"height": 72.0
@@ -593,6 +597,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"craw",
+				"crawl.go"
+			]
 		],
 		"width": 0.0
 	},
@@ -608,10 +616,24 @@
 		],
 		"width": 380.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 147.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

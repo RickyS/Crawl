@@ -1,0 +1,13 @@
+Crawl Todo:
+  ☐ examples of processing response channel to do this and that
+  ☐ Monitor: make it work, make it optional, or delete it.
+  ☐ Stress testing, incl multi-linked ricky and multi-linked file://
+  ☐ Study net/html further.
+  ☐ Option to not close headers so listener on response channel can do it.
+  ☐ Eliminate return of request channel. (?)
+  ☐ Transport with ResponsHeaderTimeout of, say, 5 seconds.  Then CancelRequest ??
+  ☐ Command-line arguments
+  ☐ callbacks vs response chanel
+  ☐ diagnostic spew.  Control or remove.  glog?
+  ☐ Bitbucket or Github
+

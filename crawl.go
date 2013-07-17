@@ -12,8 +12,8 @@ import (
 )
 
 var urlCount int = 0
-var urlLength int = 0
-var sumElapsed time.Duration = 0
+var urlLength int = 0            // Sum of all lengths of url strings.
+var sumElapsed time.Duration = 0 // Total of elapsed time of Get() calls, even though they overlap.
 
 //var statusCodeCounts [601]int // store counts of status code appearances.  Mostly 200s, some 404s...
 
@@ -62,7 +62,7 @@ func main() {
 		eachGroup := jobData.Tests[i]
 		fmt.Println("")
 		testnameDisplay := "'" + eachGroup.Testname + "'"
-		fmt.Printf("Test %12s has: Maxurls %3d, Gomaxprocs %2d, MaxGoRoutines %3d, ExpectFail %v, JustOneDomain %s, %2d urls:",
+		fmt.Printf("Job %12s has: Maxurls %3d, Gomaxprocs %2d, MaxGoRoutines %3d, ExpectFail %v, JustOneDomain %s, %2d urls:",
 			testnameDisplay, eachGroup.Maxurls, eachGroup.Gomaxprocs, eachGroup.MaxGoRoutines,
 			eachGroup.ExpectFail, boolTF(eachGroup.JustOneDomain), len(eachGroup.Urls))
 
