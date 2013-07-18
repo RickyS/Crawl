@@ -1,13 +1,22 @@
-Crawl Todo:
+Crawl/Creep Todo:
+  ☐ ARE WE DONE:  If a page has no links that are new to us, we have reached a leaf node.  So?
+  ☐ AT Aborted End: Broadcast Done-message to each goroutine which listens on special chan via select.
+    ☐ OR death-watch var
+  ☐ STOP Exponential explosion:  When full or busy, keep a queue (channel) of Bodies, not of links.  Better or worse? 
+      ☐  More data but a shorter queue.
   ☐ examples of processing response channel to do this and that
   ☐ Monitor: make it work, make it optional, or delete it.
   ☐ Stress testing, incl multi-linked ricky and multi-linked file://
-  ☐ Study net/html further.
-  ☐ Option to not close headers so listener on response channel can do it.
-  ☐ Eliminate return of request channel. (?)
-  ☐ Transport with ResponsHeaderTimeout of, say, 5 seconds.  Then CancelRequest ??
+  ☐ Study net/html further. 
+  ☐ Option to not close headers/Body() so listener on response channel can do it.
+  ✔ Eliminate return of request channel. (?) @done (13-07-18 18:21)
+  ☐ Transport with ResponsHeaderTimeout of, say, 5 seconds.  Then CancelRequest ??  Put in map as visited.
   ☐ Command-line arguments
-  ☐ callbacks vs response chanel
+  ☐ callbacks vs response channel
   ☐ diagnostic spew.  Control or remove.  glog?
-  ☐ Bitbucket or Github
+  ✔ Check beenThereDoneThat before enQueing @done (13-07-18 18:22)
+Misc:
+  ☐ Commas:   9999999 => 9,999,999;  1234567890.123456 => 12,345,687,890.123456
+Publish:
+  ☐ Bitbucket, SourceForge or Github
 

@@ -4,8 +4,9 @@
     "Testname":           "IANA",
     "Maxurls":              9600,
     "MaxGoRoutines":           10,
-    "Gomaxprocs":              2,
+    "Gomaxprocs":              3,
     "ExpectFail":          false,
+    "JustOneDomain":       false,
     "Urls":         [ "http://www.iana.org/"
                     ]
     }

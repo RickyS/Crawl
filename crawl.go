@@ -15,7 +15,7 @@ var urlCount int = 0
 var urlLength int = 0            // Sum of all lengths of url strings.
 var sumElapsed time.Duration = 0 // Total of elapsed time of Get() calls, even though they overlap.
 
-//var statusCodeCounts [601]int // store counts of status code appearances.  Mostly 200s, some 404s...
+var statusCodeCounts [601]int // store counts of status code appearances.  Mostly 200s, some 404s...
 
 // Just a looping goroutine that dumps diagnostic output.
 /*func monitor() {
@@ -54,7 +54,7 @@ var sumElapsed time.Duration = 0 // Total of elapsed time of Get() calls, even t
 }*/
 
 func main() {
-	jobData := creep.LoadJobData("golang.json") // Load job request into struct jobData.
+	jobData := creep.LoadJobData("iana.json") // Load job request into struct jobData.
 	//go monitor()
 
 	startTime := time.Now()
@@ -86,29 +86,29 @@ func doJob(pEachGroup *creep.JobData) {
 	testname := pEachGroup.Testname
 	testnameDisplay := "'" + testname + "'"
 
-	reqChan, respChan := creep.CreepWebSites(urls, maxurls, maxGoRoutines, pEachGroup.JustOneDomain) // Call the software under test (SUT)
+	respChan := creep.CreepWebSites(urls, maxurls, maxGoRoutines, pEachGroup.JustOneDomain) // Call the software under test (SUT)
 
 OnceForEachResponse:
 	for {
 		result, notDoneYet := <-respChan
 		if !notDoneYet {
-			fmt.Printf("Job Closed %s, len %d\n", testnameDisplay, len(reqChan))
+			fmt.Printf("Job Closed %s\n", testnameDisplay)
 			//Channel has been closed by waitGroup, we should be all done by now.
 			// fmt.Printf("Job Closed %12s: %4d urls Fetched, %4d dupes. Elapsed: %v, len (reqQ) %3d, resps: %3d\n\n",
 			// 	testnameDisplay, synched.urlsFetched, synched.dupsStopped, sumElapsed, len(reqChan), urlCount)
 			// fmt.Println("go Status: ", strings.Join(routineStatus, ""))
-			//creep.ShowSummary()
+			ShowSummary()
 			return
 		}
 
 		if (nil != result) && ("DONE" == result.Url) {
-			fmt.Printf("Job Done %s, len %d\n", testnameDisplay, len(reqChan))
+			fmt.Printf("Job Done %s\n", testnameDisplay)
 			//Channel has been closed, we should be all done by now.
 			// testnameDisplay := "'" + testname + "'"
 			// fmt.Printf("Job Done %12s: %4d urls Fetched, %4d dupes. Elapsed: %v, len (reqQ) %3d, resps: %3d\n\n",
 			// 	testnameDisplay, synched.urlsFetched, synched.dupsStopped, sumElapsed, len(reqChan), urlCount)
 			// fmt.Println("go Status: ", strings.Join(routineStatus, ""))
-			//creep.ShowSummary()
+			ShowSummary()
 			return
 		}
 
@@ -122,12 +122,12 @@ OnceForEachResponse:
 		urlLength += len(result.Url)
 
 		if (nil != result) && (nil != result.HttpResponse) {
-			//sc := result.HttpResponse.StatusCode
-			// if (0 <= sc) && ((len(statusCodeCounts) - 1) > sc) {
-			// 	statusCodeCounts[sc]++
-			// } else {
-			// 	statusCodeCounts[len(statusCodeCounts)-1]++ // Count Invalid status codes.
-			// }
+			sc := result.HttpResponse.StatusCode
+			if (0 <= sc) && ((len(statusCodeCounts) - 1) > sc) {
+				statusCodeCounts[sc]++
+			} else {
+				statusCodeCounts[len(statusCodeCounts)-1]++ // Count Invalid status codes.
+			}
 		}
 		if expectFail {
 			if nil == result.Err { // no fail.  Only the package tester uses this facility.
@@ -160,4 +160,16 @@ func boolTF(george bool) string {
 	} else {
 		return "F"
 	}
+}
+
+// Show counts of status codes.
+func ShowSummary() {
+	var total = 0
+	for sc, sCount := range statusCodeCounts {
+		if 0 < sCount {
+			total += sCount
+			fmt.Printf("StatusCode  %3d:  %6d\n", sc, sCount)
+		}
+	}
+	fmt.Printf("StatusCode Total: %6d\n", total)
 }

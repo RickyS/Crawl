@@ -21,10 +21,11 @@ function creep () {
   grep -c 'Test got result' 1.txt       | sed -e 's,^,Test got result: ,'
   egrep '^Waited:|Test Done|Test Closed| go Status: |StatusCode ' 1.txt
   grep -n DONE *.txt
+  grep 'Test ending after' {1,2}.txt 
   grep -i -w error *.txt
 }
 
 function scan ()  {
   #There's a better way to do this.
-   grep -h routineStatus *.go | grep -v 'strings.Join' | sed -r -e 's,^[ \t]+,,' | sort
+   grep -h routineStatus ../creep/*.go | grep -v 'strings.Join' | sed -r -e 's,^[ \t]+,,' | sort
 }
