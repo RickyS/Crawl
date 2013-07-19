@@ -29,3 +29,7 @@ function scan ()  {
   #There's a better way to do this.
    grep -h routineStatus ../creep/*.go | grep -v 'strings.Join' | sed -r -e 's,^[ \t]+,,' | sort
 }
+
+install () {
+  go install -v -x
+}

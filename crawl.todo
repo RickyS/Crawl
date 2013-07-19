@@ -1,5 +1,6 @@
 Crawl/Creep Todo:
   ☐ ARE WE DONE:  If a page has no links that are new to us, we have reached a leaf node.  So?
+  ☐ Make go routine status an array of runes.
   ☐ AT Aborted End: Broadcast Done-message to each goroutine which listens on special chan via select.
     ☐ OR death-watch var
   ☐ STOP Exponential explosion:  When full or busy, keep a queue (channel) of Bodies, not of links.  Better or worse? 
@@ -15,6 +16,17 @@ Crawl/Creep Todo:
   ☐ callbacks vs response channel
   ☐ diagnostic spew.  Control or remove.  glog?
   ✔ Check beenThereDoneThat before enQueing @done (13-07-18 18:22)
+  Solve infinity Problem:
+   ☐ Keep track of number of bytes fetched in total.
+   ☐ For Just1Domain: Keep list of rejected domains, only the domain.  Print at end.
+   ☐ Restart with new list from previous run.
+   ☐ For each page, make a list of fan-out urls, and put the enqueues in a goroutine of it's own.  Clean them up.  But this  just postpones the problem — same as enlarging the req chan.
+   ☐ Global variable TimeToDie bool = false;
+   ☐ Only allow Just1Domain
+   ☐ Calculate fan-out: max, min, average.
+   ☐ Calculate overall realtime urls/second
+   ☐ Detect deadlock sooner and issue message.
+   ☐ Parameterize size of request channel.
 Misc:
   ☐ Commas:   9999999 => 9,999,999;  1234567890.123456 => 12,345,687,890.123456
 Publish:
