@@ -6,11 +6,11 @@ by that website.
 And so on?  Sometimes.  See below.
 
 To install:  
-       $ go get github.com/RickyS/crawl  
-       $ go get github.com/RickyS/creep  
+       $ go get github.com/RickyS/Crawl  
+       $ go get github.com/RickyS/Creep  
 
 You'll neeed both packages, the depend on each other.  The main program is crawl. 
-The working package is creep.
+The working package is creep.  Note the capital Cs on the names to 'go get'.
 
 To run:  
       $ go run crawl.go  
