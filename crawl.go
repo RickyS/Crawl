@@ -42,7 +42,7 @@ var statusCodeCounts [601]int // store counts of status code appearances.  Mostl
 		rr := log.Sprintf("%6d:%4d.", len(reqChan), len(respChan))
 		log.Printf("Gos: %3d, req:resp %s, Urls %4d, enQ %4d, avgLen %2.2f, avgDur %12v. stra %s, ml %4d\n",
 			runtime.NumGoroutine(), rr, urlCount, qC, avgLen, avgDur, straTF, mapLength())
-		log.Println("go Status: ", strings.Join(routineStatus, ""))
+		log.Println("go Status: ", string(routineStatus))
 		counter++
 		if 10 > counter {
 			sleeper += 2
@@ -96,7 +96,7 @@ OnceForEachResponse:
 			//Channel has been closed by waitGroup, we should be all done by now.
 			// fmt.Printf("Job Closed %12s: %4d urls Fetched, %4d dupes. Elapsed: %v, len (reqQ) %3d, resps: %3d\n\n",
 			// 	testnameDisplay, synched.urlsFetched, synched.dupsStopped, sumElapsed, len(reqChan), urlCount)
-			// fmt.Println("go Status: ", strings.Join(routineStatus, ""))
+			// fmt.Println("go Status: ", string(routineStatus))
 			ShowSummary()
 			return
 		}
@@ -107,7 +107,7 @@ OnceForEachResponse:
 			// testnameDisplay := "'" + testname + "'"
 			// fmt.Printf("Job Done %12s: %4d urls Fetched, %4d dupes. Elapsed: %v, len (reqQ) %3d, resps: %3d\n\n",
 			// 	testnameDisplay, synched.urlsFetched, synched.dupsStopped, sumElapsed, len(reqChan), urlCount)
-			// fmt.Println("go Status: ", strings.Join(routineStatus, ""))
+			// fmt.Println("go Status: ", string(routineStatus))
 			ShowSummary()
 			return
 		}

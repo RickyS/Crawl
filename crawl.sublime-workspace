@@ -40,6 +40,14 @@
 	"buffers":
 	[
 		{
+			"file": "alias.bash",
+			"settings":
+			{
+				"buffer_size": 1019,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "ricky.json",
 			"settings":
 			{
@@ -51,7 +59,7 @@
 			"file": "iana.json",
 			"settings":
 			{
-				"buffer_size": 271,
+				"buffer_size": 305,
 				"line_ending": "Unix"
 			}
 		},
@@ -72,6 +80,14 @@
 			}
 		},
 		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 32,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "dummy.json",
 			"settings":
 			{
@@ -80,18 +96,18 @@
 			}
 		},
 		{
-			"file": "alias.bash",
+			"file": "crawl.go",
 			"settings":
 			{
-				"buffer_size": 936,
+				"buffer_size": 5586,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "crawl.go",
+			"file": "crawl.todo",
 			"settings":
 			{
-				"buffer_size": 5332,
+				"buffer_size": 1879,
 				"line_ending": "Unix"
 			}
 		}
@@ -99,7 +115,7 @@
 	"build_system": "Packages/GoSublime/GoSublime.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 33.0,
 		"selected_items":
 		[
 			[
@@ -135,7 +151,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -155,6 +171,12 @@
 	},
 	"file_history":
 	[
+		"/home/ricky/Projects/Go/import/src/github.com/golang/glog/glog_test.go",
+		"/home/ricky/Projects/Go/import/src/github.com/golang/glog/glog.go",
+		"/home/ricky/Projects/Go/import/src/github.com/golang/glog/glog_file.go",
+		"/home/ricky/Projects/Go/own/src/crawl/crawl.sublime-project",
+		"/home/ricky/.config/sublime-text-3/Installed Packages/sidebar/Side Bar.sublime-menu",
+		"/home/ricky/.config/sublime-text-3/Installed Packages/sidebar/SideBarGit.sublime-package",
 		"/home/ricky/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/ricky/.config/sublime-text-2/Packages/AdvancedNewFile/README.md",
 		"/home/ricky/.config/sublime-text-2/Packages/Color Scheme - User/BlackboardRicky.tmTheme",
@@ -173,7 +195,6 @@
 		"/home/ricky/Projects/Go/own/src/crawl/garbage.txt",
 		"/home/ricky/defaults.list",
 		"/home/ricky/Projects/Go/own/src/creep/whatever.txt",
-		"/home/ricky/Projects/Go/own/src/crawl/crawl.sublime-project",
 		"/home/ricky/Projects/Go/own/src/crawl/crawl.go",
 		"/home/ricky/Projects/Go/own/src/creep/creep.go",
 		"/home/ricky/Projects/Go/own/src/crawl/loadtestfile.go",
@@ -231,7 +252,7 @@
 	],
 	"find":
 	{
-		"height": 49.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -248,6 +269,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"strings.Join(routineStatus, \"\")",
+			"routineStatus",
+			"statusCodeCounts",
+			"reqChan",
 			"creep.jobData",
 			"JobDescription",
 			"testname",
@@ -304,6 +329,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"string(routineStatus)",
 			"jobData",
 			"creep.JobDescription",
 			"EachGroup",
@@ -331,11 +357,40 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "alias.bash",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "ricky.json",
 					"semi_transient": false,
 					"settings":
@@ -347,37 +402,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "iana.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								334,
+								334
 							]
 						],
 						"settings":
@@ -394,6 +420,35 @@
 				},
 				{
 					"buffer": 2,
+					"file": "iana.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "golangbig.json",
 					"semi_transient": false,
 					"settings":
@@ -422,7 +477,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "golang.json",
 					"semi_transient": false,
 					"settings":
@@ -451,7 +506,34 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
+					"file": ".gitignore",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 32,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "dummy.json",
 					"semi_transient": false,
 					"settings":
@@ -480,55 +562,53 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "alias.bash",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 936,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								448,
-								448
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "crawl.go",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5332,
+						"buffer_size": 5586,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5071,
+								5071
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3002.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "crawl.todo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1178,
+								1178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -541,7 +621,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -578,6 +658,10 @@
 	{
 		"height": 120.0
 	},
+	"output.GoSublime-main-output":
+	{
+		"height": 130.0
+	},
 	"output.GsDoc-output-output":
 	{
 		"height": 130.0
@@ -589,7 +673,7 @@
 	"project": "crawl.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":

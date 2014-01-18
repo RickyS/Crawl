@@ -3,3 +3,9 @@
 Backup/
 *.old
 *.bad
+.Backup/
+*.went
+*.tar.xc
+*.tar
+*.tar.gz
+*.sublime-workspace
