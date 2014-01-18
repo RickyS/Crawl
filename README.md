@@ -17,12 +17,12 @@ To run:
 Or, on Linux:  
       $ go install -v -x  && crawl  
 
-Instead of command line arguments, the crawl program reads a json file.  A simple small
-file is the default:  
+Instead of command line arguments, the crawl program reads a json file.
+A simple small file is the default:  
 iana.json, which is among the included files.
 
 crawl.go contains the line:  
-     jobData := creep.LoadJobData("iana.json")  
+     jobData := creep.LoadJobData("**iana.json**")  
 which specifies that the parameter file iana.json will be used.  
 
 Todo: The name of the json file should be a command line argument.
